@@ -16,8 +16,8 @@ project(LinalgVectorAddPass)
 
 set(CMAKE_CXX_STANDARD 17)
 
-# MLIR installation location (from buddy-mlir or your IREE build)
-set(MLIR_DIR "$ENV{HOME}/Projects/llvm-project/build/lib/cmake/mlir")
+# MLIR installation location
+set(MLIR_DIR "$ENV{HOME}/llvm-project/build/lib/cmake/mlir")
 find_package(MLIR REQUIRED CONFIG)
 
 message(STATUS "Found MLIR: ${MLIR_DIR}")
