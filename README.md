@@ -1,8 +1,7 @@
 # mlir-snitch-pass
 lowering linalg.generic to a embedded hardware function "snitch_hw_vector_add", support memref, not tensor.
 when working with tensor types, linalg.generic must produce a result (i.e., it must return a tensor value).
-1:
-build LLVM:
+1:build LLVM:
 cmake -G Ninja ../llvm \
   -DLLVM_ENABLE_PROJECTS="mlir" \
   -DLLVM_TARGETS_TO_BUILD="host" \
